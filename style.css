@@ -1,0 +1,983 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Averia Serif Libre", cursive;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  background-image: url(img/background/hero-bg1.jpg);
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+  background-attachment: fixed;
+
+  transition: all 1s ease;
+}
+.nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin: 2% 7.5% 0;
+  align-items: center;
+  background-color: white;
+  height: 7.5vh;
+  z-index: 9999999;
+  transition: all 0.4s ease;
+}
+
+.nav > a {
+  color: green;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.nav-items a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav-items a:hover {
+  color: orangered;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form label {
+  background-color: green;
+  font-size: large;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  height: 5vh;
+}
+.search-form input {
+  height: 5vh;
+  width: 15vw;
+  background-color: rgb(239, 234, 234);
+  border: none;
+  outline: none;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+
+.search-form input::placeholder {
+  padding-left: 0.5rem;
+  font-size: large;
+}
+
+.icon i {
+  margin-left: 1rem;
+  font-size: large;
+  cursor: pointer;
+}
+#menu-btn {
+  display: none;
+}
+
+#search {
+  display: none;
+}
+
+.sec1 {
+  margin-left: 7.5%;
+
+  width: 42.5%;
+  position: absolute;
+  top: 30%;
+
+  color: white;
+}
+.sec1 h2 {
+  font-size: 3.3rem;
+}
+.sec1 p {
+  font-size: 1.2rem;
+  margin-top: 1%;
+}
+.sec1 .btn {
+  margin-top: 3%;
+}
+.sec1 button {
+  color: white;
+  font-size: 1.3rem;
+  background: linear-gradient(45deg, olivedrab, #267226);
+  padding: 1rem 0;
+  width: 7.5rem;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+.products {
+  margin: 3% 6% 0;
+}
+
+.products .heading,
+.fresh .heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products h3,
+.fresh h3 {
+  font-size: x-large;
+}
+
+.products .heading p,
+.fresh .heading p {
+  font-size: larger;
+  color: orangered;
+  cursor: pointer;
+}
+
+.products .heading p i,
+.fresh .heading p i {
+  font-size: medium;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
+  column-gap: 1%;
+  row-gap: 1.5%;
+  margin-top: 1.5rem;
+}
+
+.product-card .Apple {
+  background-image: url(img/fruits/apple.jpg);
+  background-size: cover;
+}
+.product-card .Mango {
+  background-image: url(img/fruits/mango.jpg);
+  background-size: cover;
+}
+
+.product-card .Peach {
+  background-image: url(img/fruits/peach.jpg);
+  background-size: cover;
+}
+
+.product-card .Strawberry {
+  background-image: url(img/fruits/strawberry.jpg);
+  background-size: cover;
+}
+
+.product-card p {
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  color: white;
+  padding: 1rem;
+}
+
+.product-card p span {
+  font-size: 3rem;
+}
+
+.fresh-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 2% 5% 0;
+
+  justify-content: start;
+  gap: 1%;
+}
+
+.fresh .heading {
+  margin: 6% 5% 2%;
+}
+.card {
+  height: 360px;
+  width: 260px;
+  margin-bottom: 1%;
+
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: -5px -5px 19px 3px rgba(255, 255, 255, 0.45),
+    5px 5px 19px 3px rgba(94, 104, 121, 0.3);
+}
+
+.card > div {
+  height: 55%;
+}
+.card img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  background: -o-linear-gradient();
+}
+
+.img-txt i {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  background-color: #267226;
+  padding: 0.5rem;
+  font-size: large;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.img-txt span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: red;
+  color: white;
+  padding: 0.5rem;
+  font-size: large;
+  border-radius: 10%;
+  font-weight: bold;
+}
+
+.card .card-contant {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+
+.card-contant > p {
+  font-weight: bold;
+}
+
+.card-contant p .span2 {
+  text-decoration: underline;
+}
+.card-contant p > span {
+  text-decoration: line-through;
+}
+
+.card .nn {
+  background-color: #308330;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10%;
+
+  cursor: pointer;
+  margin: 1.5rem auto 0;
+  width: fit-content;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  text-transform: lowercase !important;
+}
+
+.Offers {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(img/background/timer-bg.jpg);
+  margin-top: 5rem;
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.Offers > h1 {
+  text-align: center;
+
+  color: white;
+  font-size: 3rem;
+  padding-top: 5rem;
+}
+.Offers > h1 span {
+  color: red;
+}
+
+.Offers .offer-time {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.Offers .offer-time .time {
+  border: 5px solid white;
+  color: white;
+  width: 200px;
+  height: 200px;
+  margin: 3rem;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.Offers .offer-time .time h1 {
+  font-size: 4rem;
+}
+
+.Offers .offer-time .time p {
+  font-size: 1.5rem;
+}
+
+.dd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.Customer {
+  margin-top: 5rem;
+}
+
+.Customer .heading h3 i {
+  font-size: medium;
+}
+
+.Customer .Customer-card {
+  margin: 2% 5% 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 90%;
+}
+
+.Customer .Customer-card .card1 {
+  border: 1px solid #ddd;
+  width: auto;
+  box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3);
+  margin: 10px;
+}
+
+.Customer .Customer-card .cardimg {
+  display: flex;
+}
+
+.Customer .Customer-card .cardimg img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 0.5px solid #ddd;
+  padding: 0.1rem;
+  margin: 1rem;
+}
+
+.Customer .Customer-card .cardimg h3 {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.Customer .Customer-card .cardimg h3 > span {
+  font-weight: 900;
+}
+
+.Customer .Customer-card .cardimg h3 .country {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.Customer .Customer-card .card1 p {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.Customer .Customer-card .card1 p i {
+  font-size: x-large;
+  margin-left: 0.6rem;
+}
+
+.Contact {
+  position: relative;
+  height: 120vh;
+  margin-top: 5rem;
+}
+.Contact .bg1 {
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(img/background/contact-bg.jpg);
+  height: 60vh;
+  background-attachment: fixed;
+}
+.Contact .bg2 {
+  position: absolute;
+  background-image: url(img/background/contact.jpg);
+  width: 70%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  margin: 0 15%;
+  top: 10vh;
+  z-index: 999;
+
+  border-radius: 1%;
+}
+
+.Contact .bg2 .Contact-container h2 {
+  color: #267226;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.Contact .bg2 .Contact-container .contact-sec {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Contact .bg2 .Contact-container .info {
+  width: 35%;
+  margin-left: 6%;
+}
+.Contact .bg2 .Contact-container .info h3 {
+  color: #267226;
+  font-size: 2rem;
+}
+
+.Contact .bg2 .Contact-container .info p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.Contact .bg2 .Contact-container .info p i {
+  color: #267226;
+  font-size: x-large;
+  margin-right: 1rem;
+}
+.form {
+  width: 55%;
+}
+
+.form tr td {
+  width: 50%;
+
+  padding: 0 1rem 2rem 0;
+}
+
+.form tr td input {
+  height: 3rem;
+  width: 100%;
+  color: #333;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 0.2rem;
+  background: #eff;
+
+  box-shadow: 0 0 0.1rem #666;
+  outline: none;
+  padding: 0 1rem;
+
+  box-sizing: border-box;
+
+  transition: all 0.3s ease;
+}
+.form tr td textarea {
+  width: 100%;
+  color: #333;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 0.2rem;
+  background: #eff;
+
+  box-shadow: 0 0 0.1rem #666;
+  outline: none;
+  padding: 0 1rem;
+
+  box-sizing: border-box;
+
+  transition: all 0.3s ease;
+}
+
+.form tr td button {
+  background-color: #267226;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border: none;
+}
+
+.last-sec {
+  background-color: #211e25;
+  color: white;
+}
+
+.last-sec .first {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+
+  flex-wrap: wrap;
+}
+
+.last-sec .first p {
+  margin: 3.8rem;
+  font-size: 1.5rem;
+}
+
+.last-sec .first div {
+  margin: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  width: 25%;
+
+  position: relative;
+}
+.last-sec .first div input {
+  height: 100%;
+  width: 100%;
+}
+.last-sec .first div input::placeholder {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.last-sec .first div label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem 0.6rem;
+  color: white;
+  background-color: red;
+  margin: 2px;
+  cursor: pointer;
+}
+.last-sec .first div label:hover {
+  background-color: #211e25;
+}
+
+.last-sec .last {
+  margin: 3rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 2%;
+}
+.last-sec .last .cart1 p {
+  padding-top: 0.5rem;
+  line-height: 1.5;
+}
+.last-sec .last .cart1 .items1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.last-sec .last .cart1 div a {
+  text-decoration: none;
+  color: white;
+  padding: 0.3rem;
+}
+.last-sec .last .cart1 h3 {
+  font-size: 1.3rem;
+  border-bottom: 5px solid gray;
+  width: fit-content;
+  padding-bottom: 0.3rem;
+}
+.last-sec .pb {
+  border-top: 1px solid white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.last-sec .pb span {
+  font-size: x-large;
+  color: rgb(196, 145, 16);
+}
+
+.last-sec .last .cart1 i {
+  padding: 0.5rem;
+  font-size: x-large;
+}
+
+.nav-items.active,
+.search-form.active {
+  transform: scaleY(1);
+}
+
+/* Add TO CART */
+
+.add-product {
+  position: fixed;
+  z-index: 99999999999;
+  height: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: hidden;
+  overflow: auto;
+
+  background-color: white;
+
+  transform: scaleY(0);
+
+  /* transform-origin: center;
+    
+  transition: all 0.5s ease;
+  */
+}
+
+.fir1 {
+  position: relative;
+  width: 95%;
+  font-size: x-large;
+  margin: 3rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding-bottom: 15px;
+}
+
+.fir1 div {
+  font-size: large;
+  background-color: red;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.sele1 {
+  margin-right: 1.5rem;
+  color: red;
+  cursor: pointer;
+}
+.sele2 {
+  cursor: pointer;
+}
+.fir2 {
+  width: 95%;
+
+  margin: 1rem auto;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  position: relative;
+}
+
+.fir2 .kk {
+  display: flex;
+  flex-direction: column;
+  /* display: none; */
+  font-size: x-large;
+}
+
+.active {
+  transform: scaleY(1) !important;
+}
+.hide {
+  transform: scaleY(0);
+}
+.cc {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.total {
+  display: flex;
+}
+
+.fir2 .kk > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fav {
+  position: absolute;
+
+  transform: scaleY(0);
+}
+
+.pp {
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.fav > p {
+  font-size: x-large;
+}
+
+.total h4 {
+  margin-left: 1.5rem;
+
+  font-size: large;
+  background-color: green;
+  padding: 5px;
+  color: white;
+}
+/* style add to card */
+
+.div1style {
+  width: 95%;
+  margin: 0 auto 1rem;
+  display: flex;
+  height: 50%;
+  border: 1px solid grey;
+  box-shadow: 0.6rem 0.6rem 0.9rem #ddd;
+
+  transition: 0.4s ease;
+}
+.div1style:hover {
+  box-shadow: 0.6rem 0.6rem 0.9rem silver;
+}
+.div1style img {
+  width: 32%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.div1style .inerdivstyle {
+  padding: 10px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.div1style .inerdivstyle h4 {
+  color: #267226;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.div1style .inerdivstyle p,
+.div1style .inerdivstyle div {
+  margin-bottom: 1rem;
+  word-spacing: 1px;
+}
+
+.div1style .inerdivstyle p span input {
+  width: 20%;
+}
+.div1style .inerdivstyle div {
+  display: flex;
+}
+
+.div1style .inerdivstyle div .buy1 {
+  margin-right: 10px;
+  background-color: #267226;
+  color: white;
+  padding: 5px 8px;
+}
+
+.div1style .inerdivstyle div .remov1 {
+  padding: 5px 8px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+/*  */
+/*  */
+
+#Shop {
+  position: relative;
+}
+.nm {
+  position: absolute;
+  top: -18px;
+  right: -7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  text-align: center;
+  color: white;
+  padding-top: 1.2px;
+}
+
+.send{
+  cursor: pointer;
+}
+.buy1{
+  cursor: pointer;
+}
+
+/*  */
+
+@media screen and (max-width: 1360px) {
+  .nav {
+    width: 100%;
+    margin: 0;
+  }
+  .Customer .Customer-card {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Offers {
+    height: auto;
+  }
+
+  .contact-sec {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Contact .bg2 .Contact-container .info {
+    width: 80%;
+  }
+  .form {
+    width: 80%;
+    margin-top: 2rem;
+  }
+  /* .bg2{
+  height: 120vh;
+ } */
+
+  .last-sec .first {
+    flex-direction: column;
+    align-items: center;
+  }
+  .last-sec .first div {
+    width: 40%;
+    margin-top: 0;
+  }
+  .last-sec .first p {
+    margin: 2rem 0 1rem;
+  }
+}
+
+@media (max-width: 1070px) and (min-width: 900px) {
+  .nav-items {
+    transform: scaleY(0);
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    width: 100%;
+    margin: 0;
+  }
+
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .nav-items {
+    position: absolute;
+    right: 1rem;
+    top: 5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    align-items: center;
+    transform: scaleY(0);
+    width: 12rem;
+  }
+  .nav-items a {
+    padding-bottom: 1rem;
+  }
+  .search-form input {
+    width: 30vw;
+  }
+  .sec1 {
+    width: 80vw;
+  }
+  .sec1 h2 {
+    font-size: 3rem;
+  }
+  .fresh-card {
+    justify-content: center;
+  }
+  .last-sec .first div {
+    width: 50%;
+  }
+
+  .fir1{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .fir1 p{
+    display: flex;
+    flex-direction: column;
+  }
+  .close{
+    width: fit-content;
+  }
+  .kk >div{
+    display: flex;
+    flex-direction: column;
+  }
+  .div1style{
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+  }
+  .div1style img{
+    width:auto;
+
+  }
+  .pp{
+    justify-content: center;
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
+  
+} */
+@media screen and (max-width: 661px) {
+  .sec1 {
+    top: 30%;
+    width: 90%;
+    margin-right: 7.5%;
+  }
+  .sec1 h2 {
+    font-size: 2.5rem;
+  }
+
+  #search {
+    display: inline-block;
+  }
+  .search-form {
+    position: absolute;
+    top: 5rem;
+    transform: scaleY(0);
+  }
+
+  .last-sec .last {
+    padding-bottom: 2rem;
+  }
+}
+.up {
+  padding: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: rgb(48, 171, 175);
+  border-radius: 5px;
+  font-size: large;
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+
+.up:hover {
+  background-color: rgb(102, 102, 228);
+}
